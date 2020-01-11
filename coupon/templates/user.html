@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Successfully</title>
+</head>
+<body>
+    <h1>Successfully Registered</h1>
+    {% for user in users %}
+        <table style="border: 1px solid black;padding: 20px ; margin-bottom:10px ">
+            <tr>
+                <td> name: <div style="border: 1px solid black">{{user.name}} </div><br> </td>
+            </tr>
+            <tr>
+                <td> age: <div style="border: 1px solid black">{{user.age}} </div></td>
+            </tr>
+            <tr>
+                <td> city: <div style="border: 1px solid black">{{user.city}} </div></td>
+            </tr>
+            <tr>
+                <td> coupon: <div style="border: 1px solid black">{{user.coupon}} </div></td>
+            </tr>
+        </table>
+    {% endfor %}
+</body>
+</html>
+
+
+
+<!--<html>-->
+<!--<body>-->
+
+<!--<h1>Regitration form</h1>-->
+<!--<p>Please enter your details here.</p>-->
+<!--  name:<br>-->
+<!--  <input type="text" name="name"><br>-->
+<!--  Age:<br>-->
+<!--  <input type="number" name="age"><br>-->
+<!--  City:<br>-->
+<!--  <input type="text" name="city"><br>-->
+<!--  Coupon:<br>-->
+<!--  <input type="text" name="coupon"><br><br>-->
+<!--  -->
+<!--<button type="submit" class="registerbtn">Register</button>-->
+<!--</form>-->
+
+<!--</body>-->
+<!--</html>-->
